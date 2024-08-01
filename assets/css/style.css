@@ -42,13 +42,6 @@ body {
     overflow-x: hidden;
     font-family: "Sora", sans-serif;
 }
-main {
-    position: relative;
-    z-index: 0;
-    background-image: url(../images/01.jpg);
-    background-position: top center;
-    background-size: cover;
-}
 /*common css End*/
 
 /* Common btn css start */
@@ -140,12 +133,13 @@ main {
 
 /*Header css start*/
 .header-section {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 99;
-    background: transparent;
+    background: #fff;
 }
 
 .nav-items-wrapper {
@@ -197,7 +191,7 @@ main {
 
 .nav-list-item-link {
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--secondary-color);
     display: flex;
@@ -255,18 +249,18 @@ main {
 }
 
 .apply-btn-outer {
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .apply-btn-inner {
     border: 1px solid var(--primary-color);
-    padding: 12px 40px;
+    padding: 10px 15px;
     display: inline-block;
-    border-radius: 15px;
     background: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
     text-align: center;
     cursor: pointer;
     -webkit-transition: all ease-in-out 0.2s;
@@ -280,7 +274,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 10%;
+    width: 100%;
     height: 100%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -289,21 +283,19 @@ main {
     z-index: -1;
     -webkit-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
-    opacity: 0;
-    border-radius: 12px;
-}
-
-.apply-btn-inner:hover::after {
-    width: 100%;
     opacity: 1;
 }
 
-.apply-btn-inner:hover {
-    color: #fff;
+.apply-btn-inner:hover::after {
+    width: 0%;
+    opacity: 0;
 }
 
+.apply-btn-inner:hover {
+    color: var(--secondary-color);
+}
 
-    /*small btn css*/
+/*small btn css*/
 .nav-toggle-btn .btn-inner {
     width: 26px;
     border-bottom: 1px solid #ff7e16;
@@ -356,29 +348,103 @@ main {
     transition: all .3s ease;
 }
 
-    /*fixed header*/
-.fixed-header .header-section {
-    position: fixed;
-    background: rgb(0 0 0 / 74%);
-    box-shadow: rgb(245 245 245 / 27%) 0px 3px 8px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    animation: smoothScroll 1s forwards;
-}
-@keyframes smoothScroll {
-    0% {
-        transform: translateY(-40px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
 /*Header css End*/
 
 /* Home section css start */
+.home-section {
+    padding: 30px 0;
+} 
 
+.home-item-outer {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 100px 0; */
+    position: relative;
+    border-radius: 10px;
+}
+
+.home-item-content {
+    max-width: 600px;
+    padding: 100px 0 100px 50px;
+    background: linear-gradient(to right, var(--primary-color), #ffffff00);
+    border-radius: 10px;
+}
+
+.home-item-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.home-item-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.home-item-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.home-items-wrapper .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #fff!important;
+    z-index: 1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-items-wrapper .owl-nav button span {
+    font-size: 25px;
+    display: inline-block;
+}
+
+.home-items-wrapper .owl-nav button.owl-prev {
+    left: 5px;
+}
+
+.home-items-wrapper .owl-nav button.owl-next {
+    right: 5px;
+}
+
+.home-items-wrapper .owl-dots {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.home-items-wrapper .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #ddd;
+    margin-right: 10px;
+}
+
+.home-items-wrapper .owl-dots .owl-dot:last-child {
+    margin-right: 0;
+}
+
+.home-items-wrapper .owl-dots .owl-dot.active {
+    background: var(--primary-color);
+}
 /* Home section css Emd */
 
 /* Feature section css start */
