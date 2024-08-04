@@ -505,6 +505,34 @@ body {
 }
 /* Service section css End */
 
+/* Service step css start */
+.service-step-section {
+    padding: 40px 0;
+}
+
+.service-step-item-outer {
+    margin-bottom: 30px;
+}
+
+.service-step-item-icon {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.service-step-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.service-step-item-text {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+/* Service step css End */
+
 /* Jobs section css start */
 .jobs-section {
     padding: 40px 0;
@@ -601,6 +629,61 @@ body {
     color: #fff;
 }
 /* Jobs section css End */
+
+/* Info section css start */
+.feature-section {
+    padding: 60px 0;
+    background: #031f42;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-bg {
+    position: absolute;
+    background-image: url(../images/round-wave-shape.svg);
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.feature-bg-book {
+    position: absolute;
+    background-image: url(../images/book-shape.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    bottom: 20px;
+    right: 130px;
+    z-index: -1;
+}
+
+.feature-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-item-outer {
+    text-align: center;
+    padding: 30px;
+}
+
+.feature-item-image {
+    max-width: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-item-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+/* Info section css End */
 
 /* Course section css start */
 .course-section{
@@ -759,6 +842,128 @@ body {
     background: var(--primary-color);
 }
 /* Testimonial section css End */
+
+/* Candidate section css start */
+.candidate-section {
+    padding: 40px 0;
+}
+
+.candidate-section .li-margin-bottom {
+    margin-bottom: 30px;
+}
+
+.candidate-item-outer {
+    text-align: center;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    border: 1px solid #ECEDF2;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.candidate-item-outer:hover {
+    -webkit-box-shadow: 0 6px 15px 0 rgba(64, 79, 104, 0.05);
+    box-shadow: 0 6px 15px 0 rgba(64, 79, 104, 0.05);
+}
+
+.candidate-image-outer {
+    margin-bottom: 15px;
+}
+
+.candidate-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.candidate-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.candidate-job {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.candidate-info-outer {
+    margin-top: 18px;
+}
+
+.candidate-job-metas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.candidate-location {
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+    margin-right: 15px;
+}
+
+.candidate-salary {
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.candidate-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tag-candidate {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    margin-right: 6px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 15px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background: #F0F5F7;
+    color: #696969;
+    border-radius: 30px;
+}
+
+.tag-candidate:last-child {
+    margin-right: 0;
+}
+
+.tag-candidate:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.candidate-link {
+    display: block;
+    padding: 10px 30px;
+    background: #e2cfbf;
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.candidate-link:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+/* Candidate section css End */
 
 /*clients section css start*/
 .client-section {
