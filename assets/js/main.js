@@ -82,6 +82,7 @@ $('.client-items-wrapper').owlCarousel({
   loop: true,
   margin: 0,
   nav: false,
+  dots: false,
   responsiveClass: true,
   autoplay: true,
   smartSpeed:1000,
