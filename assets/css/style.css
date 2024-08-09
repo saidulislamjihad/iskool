@@ -141,6 +141,8 @@ body {
     width: 100%;
     z-index: 99;
     background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0 40px;
 }
 
 .nav-items-wrapper {
@@ -299,7 +301,7 @@ body {
 /*small btn css*/
 .nav-toggle-btn .btn-inner {
     width: 26px;
-    border-bottom: 1px solid #ff7e16;
+    border-bottom: 1px solid var(--primary-color);
     position: relative;
     transition: all .4s ease;
 }
@@ -308,7 +310,7 @@ body {
     width: 40px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ff7e16;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     border-radius: 5px;
     display: none;
@@ -321,7 +323,7 @@ body {
     height: 1px;
     width: 26px;
     position: absolute;
-    background: #ff7e16;
+    background: var(--primary-color);
     top: -7px;
 }
 .nav-toggle-btn .btn-inner:after {
@@ -329,7 +331,7 @@ body {
     height: 1px;
     width: 26px;
     position: absolute;
-    background: #ff7e16;
+    background: var(--primary-color);
     top: 7px;
 }
 
@@ -664,11 +666,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .feature-item-outer {
     text-align: center;
     padding: 30px;
+    width: calc( 100% / 5 );
 }
 
 .feature-item-image {
@@ -781,19 +785,18 @@ body {
     background: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
-}
-
-.testimonial-img-outer {
-    width: 200px;
-}
-
-.testimonial-info-outer {
-    width: calc( 100% - 200px);
     padding: 20px 15px;
 }
 
+.testimonial-img-outer {margin-right: 15px;}
+
+.testimonial-info-outer {
+    width: calc( 100% - 200px);
+    /* padding: 20px 15px; */
+}
+
 .testimonial-img {
-    height: 100%;
+    max-width: 200px;
 }
 
 .testimonial-info-title {
@@ -1021,6 +1024,10 @@ body {
     margin-bottom: 30px;
 }
 
+.footer-logo-outer {
+    display: inline-block;
+}
+
 .footer-brand-outer {
     display: inline-block;
 }
@@ -1037,7 +1044,6 @@ body {
 
 .subscribe-form {
     position: relative;
-    background: #293965;
     border-radius: 4px;
 }
 
@@ -1067,7 +1073,7 @@ body {
 
 .subscribe-form input:focus {
     box-shadow: none;
-    background: transparent;
+    background: #293965;
     color: #fff;
 }
 /* Footer top css */

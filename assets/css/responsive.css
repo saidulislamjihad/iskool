@@ -1,8 +1,4 @@
-@media screen and (max-width: 991px){
-
-}
-
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1024px){
 	.nav-toggle-btn {
 	    display: flex;
 	}
@@ -11,7 +7,6 @@
 	    position: fixed;
 	    right: -100%;
 	    top: 80px;
-	    /* padding-top: 10px; */
 	    display: block;
 	    width: 250px;
 	    height: 100vh;
@@ -26,37 +21,105 @@
 	    right: 0;
 	    transition: all .5s ease;
 	}
-	.nav-list .nav-item {
+	.nav-list-item {
 	    height: auto;
+	}
+	.nav-list-item-link {
 	    display: block;
-	    border-bottom: 1px solid #f4f4f4;
+	    height: auto;
 	}
-	.nav-item-submenu {
-	    position: unset;
-	    margin-left: 15px;
-	    border: none;
-	    box-shadow: none;
-	    border-radius: unset;
-	    width: 100%;
-	    background: transparent;
+	.feature-item-outer {
+	    width: calc( 100% / 4 );
 	}
-	.nav-items-wrapper {
-	    justify-content: space-between;
+}
+
+@media screen and (max-width: 991px){
+	.home-section {
+	    padding-top: 0;
 	}
-	.nav-item-link {
-	    color: #000;
+
+	.home-section .container {
+	    padding: 0;
+	    max-width: 100%;
 	}
-	.nav-item-link i {
-	    color: #000;
+
+	.home-item-outer {
+	    border-radius: 0;
 	}
-	.submenu-item {
-	    border-bottom: none;
+
+	.home-item-content {
+	    border-radius: 0;
 	}
-	.submenu-item-link {
-	    color: #000;
+	.feature-item-outer {
+	    width: calc( 100% / 3 );
+	}
+	.footer-top-wrapper {
+	    display: block;
+	}
+
+	.footer-logo-outer {
+	    margin-bottom: 20px;
+	}
+	.footer-bottom-outer {
+	    display: block;
+	    text-align: center;
+	}
+	.footer-bottom-list{
+		justify-content: center;
+	}
+
+	.copyright-text {
+	    margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.apply-btn-outer {
+	    display: none;
+	}
+
+	.section__title {
+	    font-size: 25px;
+	}
+
+	.counter-wrapper {
+	    transform: translateX(0);
+	}
+
+	.counter-section {
+	    padding: 40px 0;
+	}
+
+	.footer-section {
+	    padding-top: 40px;
+	}
+
+	.footer-items-wrapper {
+	    padding-top: 40px;
+	    padding-bottom: 10px;
+	}
+	.feature-item-outer {
+	    width: calc( 100% / 2 );
 	}
 }
 
 @media screen and (max-width: 576px){
-	
+	.feature-item-outer {
+	    width: 100%;
+	}
+	.home-item-content {
+	    padding: 60px 0 60px 40px;
+	}
+	.subscribe-form-outer {
+	    width: 100%;
+	}
+
+	.subscribe-form-btn {
+	    position: unset;
+	    height: auto;
+	    margin-top: 15px;
+	}
+	.header-section{
+		padding: 0 20px;
+	}
 }

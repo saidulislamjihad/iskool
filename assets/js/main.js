@@ -45,9 +45,12 @@ $('.course-items-wrapper').owlCarousel({
             items: 1
         },
         600: {
+            items: 2
+        },
+        767: {
             items: 3
         },
-        1000: {
+        1100: {
             items: 4
         }
     }
@@ -63,7 +66,6 @@ $('.testimonial-items-wrapper').owlCarousel({
     autoplay: 3000,
     smartSpeed: 1000,
     responsiveClass:true,
-    stagePadding: 350,
     responsive: {
         0: {
             items: 1
@@ -72,7 +74,7 @@ $('.testimonial-items-wrapper').owlCarousel({
             items: 1
         },
         1000: {
-            items: 1
+            items: 2
         }
     }
 });
@@ -90,14 +92,17 @@ $('.client-items-wrapper').owlCarousel({
     0: {
       items: 1
     },
-    676: {
+    400: {
       items: 2
+    },
+    600: {
+      items: 3
     },
     991: {
       items: 4
     },
-    1000: {
-      items: 6
+    1100: {
+      items: 5
     }
   }
   
