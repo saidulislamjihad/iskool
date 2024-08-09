@@ -790,11 +790,6 @@ body {
 
 .testimonial-img-outer {margin-right: 15px;}
 
-.testimonial-info-outer {
-    width: calc( 100% - 200px);
-    /* padding: 20px 15px; */
-}
-
 .testimonial-img {
     max-width: 200px;
 }

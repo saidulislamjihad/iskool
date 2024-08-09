@@ -123,3 +123,26 @@
 		padding: 0 20px;
 	}
 }
+
+@media screen and (max-width: 500px){
+	.testimonial-item-outer {
+	    display: block;
+	    text-align: center;
+	}
+
+	.testimonial-info-outer {
+	    width: 100%;
+	}
+
+	.testimonial-img-outer {
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	    text-align: center;
+	}
+
+	.testimonial-img {border-radius: 100%;margin: auto;}
+
+	.testimonial-ratting {
+	    justify-content: center;
+	}
+}
